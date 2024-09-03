@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='contact.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='contactusbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <img src="{{url_for('static', filename='rzalogo.png')}}" alt="Riget Zoo Adventures">
+    <div class="container">
+        <div class="text">
+        <h1>Riget Zoo Adventures</h1>
+        <div class="beige-box">
+        <p class="p1">Contact Us</p>
+        <p class="p2">If you have any complaints and questions, please contact us on 07468 391820 or email assistance@rza.ac.uk.</p>
+        <p class="p3">We are available Monday-Friday 9am-7pm and Weekends 10am-6pm.</p>
+        <div class="button-container">
+        <a href="{{url_for('home')}}" class="green-homebox">Home</a></p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </header>
+</body>
+</html>

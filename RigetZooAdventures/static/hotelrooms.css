@@ -1,0 +1,126 @@
+header {
+    background: 6f4e37;
+    background-color: DarkGreen;
+    display: flex;
+    justify-content: space-betweeen;
+    align-items: center;
+    width: auto;
+    height: 175px;
+}
+
+img {
+    padding: 1px;
+    width: 250px;
+    height: 175px;
+    margin-right: 20px;
+}
+
+.text {
+    font-size: 38px;
+    padding-left: 1px;
+    padding-top: center;
+    display: flex;
+    color: White;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.image-container {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 20px;
+    margin-right: 260px;
+}
+
+.white-box {
+    background-color: white;
+    width: 50%; 
+    height: 50px;
+    margin-top: 20px; 
+}
+
+.logout-button {
+    background-color: beige;
+    color: black;
+    font-size: 50px;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 60px;
+    width: 240px;
+    margin-top: 55px;
+    margin-left: 80px;
+}
+
+.logout-button:hover {
+    background-color: black;
+    color: limegreen;
+    border-radius: 20px;
+}
+
+.single-box {
+    background-color: beige;
+    height: 210px;
+    width: 530px;
+    margin-top: -5px;
+}
+
+.double-box {
+    background-color: beige;
+    height: 210px;
+    width: 530px;
+    margin-top: -5px;
+}
+
+.p1, .p4 {
+    text-align: left;
+    color: black;
+    font-size: 35px;
+    margin: 0;
+    line-height: 0;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+.p2, .p3, .p5, .p6 {
+    text-align: left;
+    color: black;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 32px;
+    font-family: Arial;
+}
+
+.green-bookbox {
+    background-color: green;
+    color: white; 
+    border: none; 
+    padding: 15px 15px;
+    position: absolute;
+    left: 90%;
+    top: 80%;
+    transform: translateX(-50%); 
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    display: inline-block; 
+    width: 200px;
+    height: 70px;
+    font-size: 70px;
+    line-height: 1;
+}
+
+.green-bookbox:hover {
+    background-color: black;
+    color: limegreen;
+}

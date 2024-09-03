@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='homebookings.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Bookings</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='homebookingsbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0px 120px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="{{url_for('static', filename='rzalogo.png')}}" alt="Riget Zoo Adventures">
+    <div class="container">
+        <div class="text">
+        <h1>Riget Zoo Adventures</h1>
+        <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+    </header>
+    <div class="beige-box">
+    <p class="p1">Home Bookings</p>
+    <p class="p2">Would you like to book a zoo or a hotel?</p>
+    <form method="POST">
+    <p><a href="{{ url_for('zoobookings') }}" class="green-box">Zoo Bookings</a></p>
+    <p><a href="{{ url_for('hotelrooms') }}" class="green-box">Hotel Bookings</a></p>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,150 @@
+header {
+    background: 6f4e37;
+    background-color: DarkGreen;
+    display: flex;
+    justify-content: space-betweeen;
+    align-items: center;
+    width: auto;
+    height: 175px;
+}
+
+img {
+    padding: 1px; 
+    width: 250px;
+    height: 175px;
+    margin-right: 20px;
+}
+
+.text {
+  font-size: 38px;
+  padding-left: 1px;
+  padding-top: center;
+  display: flex;
+  color: White;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.beige-box {
+    background-color: beige;
+    width: 900px; 
+    height: 480px; 
+    border-radius: 10px;
+    padding: 20px; 
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.p1 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin-left: -30px;
+    margin-top: 25px;
+    line-height: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.p2 {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial;
+    margin-top: -15px;
+}
+
+label {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.checkin-datetime {
+    font-size: 20px;
+    background-color: lightgrey;
+    border-radius: 40px;
+    height: 35px;
+}
+
+#adults, #children {
+    width: 80px;
+    background-color: lightgrey;
+    border-radius: 40px;
+    border: none; 
+    height: 40px; 
+    padding: 5px; 
+    margin-right: 5px; 
+}
+
+.logout-button {
+    background-color: beige;
+    color: black;
+    font-size: 50px;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 60px;
+    width: 240px;
+    margin-top: 55px;
+    margin-left: 80px;
+}
+
+.logout-button:hover {
+    background-color: black;
+    color: limegreen;
+    border-radius: 20px;
+}
+
+
+.disabled-label {
+    color: black;
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+}
+
+#disabled-box {
+    position: relative;
+    top: -10px;
+    size: 30%; 
+}
+
+.checkbox {
+    transform: scale(2); 
+    margin-right: 10px;
+    top: -10px;
+}
+
+.checkout-button {
+    background-color: limegreen;
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial;
+    width: 360px;
+    height: 65px;
+    font-size: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: black;
+    color: limegreen;
+    border-radius: 50px;
+}

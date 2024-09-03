@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='loginbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0px 120px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="{{url_for('static', filename='rzalogo.png') }}" alt="Riget Zoo Adventures">
+    <div class="container">
+        <div class="text">
+        <h1>Riget Zoo Adventures</h1>
+    </header>
+    <div class="beige-box">
+    <p class="p1">Login</p>
+    <form method="POST">
+        <label for="username">Enter Username:</label><br>
+        <input type="text" id="username" name="username" required/><br>
+        <label for="password">Enter Password:</label><br>
+        <input type="password" id="password" name="password" required/><br>
+        <p><input type="submit" value="Submit" /></p>
+
+        <div class="button-container">
+            <button class="green-button"><a href="{{url_for('register')}}">Register</a></button>
+            <button class="green-button"><a href="{{url_for('home')}}">Home</a></button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

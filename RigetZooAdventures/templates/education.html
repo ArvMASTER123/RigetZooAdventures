@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='education.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='educationbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <img src="{{url_for('static', filename='rzalogo.png') }}" alt="Riget Zoo Adventures">
+    <div class="container">
+        <div class="text">
+        <h1>Riget Zoo Adventures</h1>
+        <div class="beige-box">
+        <p class="p1">Education</p>
+        <p class="p2">Welcome to Riget Zoo Adventures, where we have planned to make sure your educational visit becomes stress-free.</p>
+        <p class="p3">Make sure you've booked online to reserve slots and familarise yourself with the layout of the zoo. A member of staff will escort your group around the zoo and make you have cash or card for the gift shop or for food.</p> 
+        <p class="p4">Have packed lunches with you so you're not hungry and you can eat it around the zoo and remember to put your rubbish in the bin to prevent littering and keeping the zoo clean. Any children MUST be supervised by an adult or teacher. Make sure to follow the guidelines like following the path or your group and wash your hands before/after touching the animals.</p>
+        <p class="p5">Any missing belongings or enquiries, Contact us on 07468 391820 or email assistance@rza.ac.uk</p>
+        <p class="p6"><a href="{{ url_for('home')}}" class="green-homebox">Home</a></p>
+    </div>
+    </div>
+    </div>
+    </header>
+</body>
+</html>

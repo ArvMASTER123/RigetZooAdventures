@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='zoobookings.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Bookings</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='zoobookingsbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0px 120px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="{{url_for('static', filename='rzalogo.png')}}" alt="Riget Zoo Adventures">
+    <div class="container">
+        <div class="text">
+        <h1>Riget Zoo Adventures</h1>
+        <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+    </header>
+    <form method="POST">
+    <div class="beige-box">
+    <p class="p1">Zoo Bookings</p><br>
+    <p class="p2">Adults costs £18.35 and Children costs £12.75</p>
+    <label for="datetime" name="datetime">Check-In Date & Time:</label>
+    <input class="checkin-datetime" type="datetime-local" name="checkin-datetime" required/>
+    <script src="{{url_for('static', filename='zoobookings.js')}}"></script><br>
+    <label for="adults">Adults:</label>
+    <input for="text" id="adults" name="adults-box" required/>
+    <label for="children">Children:</label>
+    <input for="text" id="children" name="children-box" required/>
+    <br><br><br>
+    <input type="checkbox" name="disabled-box" id="terms" value="" onchange="activateSubmit(this)" class="checkbox"/>  <span class="disabled-label">Do you have any disabilites?</span><br>
+    <input type="submit" value="Checkout" class="checkout-button">
+    </form>
+</div>
+</div>
+</div>
+</header>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='hotelbookings.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bookings</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='hotelbookingsbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0px 120px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="{{url_for('static', filename='rzalogo.png')}}" alt="Riget Zoo Adventures">
+    <div class="container">
+        <div class="text">
+        <h1>Riget Zoo Adventures</h1>
+        <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+    </header>
+    <form method="POST">
+    <div class="beige-box">
+    <p class="p1">Hotel Bookings</p><br>
+    <label for="date" name="check-indate">Check-In Date:</label>
+    <input class="check-date" type="date" name="checkin-date" required/><br>
+    <label for="date" name="check-outdate">Check-Out Date:</label>
+    <input class="check-date" type="date" name="checkout-date" required/><br>
+    <script src="{{url_for('static', filename='hotelbookings.js')}}"></script>
+    <label for="adults">Adults:</label>
+    <input for="text" id="adults" name="adults-box" required/>
+    <label for="children">Children:</label>
+    <input for="text" id="children" name="children-box" required/><br>
+    <label for="singleroom">Single Room:</label>
+    <input for="text" id="singleroom" name="singleroom-box" required/>
+    <label for="doubleroom">Double Room:</label>
+    <input for="text" id="doubleroom" name="doubleroom-box" required/><br>
+    <input type="checkbox" name="terms" id="terms" value="" onchange="activateSubmit(this)" class="checkbox"/>  <span class="disabled-label">Do you have any disabilites?</span><br>
+    <input type="submit" value="Checkout" class="checkout-button">
+    </form>
+</div>
+</div>
+</div>
+</header>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='aboutus.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='aboutusbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center top;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <img src="{{url_for('static', filename='rzalogo.png')}}" alt="Riget Zoo Adventures">
+    <div class="container">
+        <div class="text">
+        <h1>Riget Zoo Adventures</h1>
+        <div class="beige-box">
+        <p class="p1">About Us</p>
+        <p class="p2">Welcome to Riget Zoo Adventures, where nature meets luxury in an wildlife discovery.</p>
+        <p class="p3">Where breathtaking adventures is around animals you've never seen before and come join the journey and experience here.</p>
+        <div class="button-container">
+        <a href="{{url_for('home')}}" class="green-homebox">Home</a></p>
+        <a href="{{url_for('contact')}}" class="green-homebox">Contact Us</a></p>
+        </div>
+    </div>
+    </div>
+    </div>
+    </header>
+</body>
+</html>

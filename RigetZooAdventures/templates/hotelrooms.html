@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='hotelrooms.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Rooms</title>
+    <style>
+        body {
+            background-image: url("{{url_for('static', filename='hotelroomsbackground.png')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{url_for('static', filename='rzalogo.png')}}" alt="Riget Zoo Adventures">
+        <div class="container">
+            <div class="text">
+                <h1>Riget Zoo Adventures</h1>
+                <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+                </header>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="image-container">
+        <div class="single-room">
+            <img src="{{url_for('static', filename='singleroom.png')}}" alt="Single Room" style="width: 530px; height: 400px">
+            <div class="single-box"><br>
+            <p class="p1">Single Room</p>
+            <p class="p2">Provides amazing comfort for a single person and it's an affordable price to stay at. This hotel is also next to the RZA zoo and malls for you to discover.</p>
+            <p class="p3">Costs £70 per night</p>
+        </div>
+        </div>
+        <div class="double-room">
+            <img src="{{url_for('static', filename='doubleroom.png')}}" alt="Double Room" style="width: 530px; height: 400px">
+            <div class="double-box"><br>
+            <p class="p4">Double Room</p>
+            <p class="p5">Provides amazing comfort for a couple and it's an affordable price to stay at. This hotel is also next to the RZA zoo and malls for you to discover.</p>
+            <p class="p6">Costs £90 per night</p><br>
+            <a href="{{url_for('hotelbookings')}}" class="green-bookbox">Book</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

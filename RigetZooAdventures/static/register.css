@@ -1,0 +1,159 @@
+header {
+    background: 6f4e37;
+    background-color: DarkGreen;
+    display: flex;
+    justify-content: space-betweeen;
+    align-items: center;
+    width: auto;
+    height: 175px;
+}
+
+img {
+    padding: 1px;
+    width: 250px;
+    height: 175px;
+    margin-right: 20px;
+}
+
+.text {
+  font-size: 38px;
+  padding-left: 1px;
+  padding-top: auto;
+  display: flex;
+  color: White;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.beige-box {
+    background-color: beige;
+    width: 900px; 
+    height: 570px; 
+    border-radius: 10px;
+    padding: 20px; 
+    text-align: center;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    color: black;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 45px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    background-color: lightgray; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    padding: 15px;
+    font-size: 16px; 
+    width: 70%; 
+    margin-bottom: 10px; 
+    box-sizing: 20px;
+    border-radius: 50px;
+}
+
+.terms-label {
+    color: black;
+    font-family: Arial;
+    font-weight: bolder;
+    position: relative;
+    top: -40px;
+}
+
+#terms {
+    position: relative;
+    top: -40px; 
+}
+
+.p1 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin-left: -30px;
+    margin-top: 25px;
+    line-height: 0;
+    font-weight: bold;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+.checkbox {
+    transform: scale(2); 
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: limegreen;
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: Arial;
+    width: 360px;
+    height: 65px;
+    font-size: 50px;
+    text-decoration: none;
+    margin-top: -30px;
+    line-height: 0.2;
+}
+
+.submit-button:hover {
+    background-color: black;
+    color: limegreen;
+}
+
+.button-container {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.login-container {
+    display: flex; 
+    justify-content: space-around;
+    margin-left: -140px;
+}
+
+.home-container {
+    display: flex; 
+    justify-content: space-around;
+    margin-right: -140px;
+}
+
+.green-button {
+    background-color: green;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: Arial;
+    width: 200px;
+    height: 65px;
+    font-size: 50px;
+    margin-left: -5px;
+    margin-top: -60px;
+    line-height: 0.2;
+}
+
+.green-button a {
+    text-decoration: none; 
+    color: white; 
+}
+
+.green-button:hover {
+    background-color: black;
+}
+
+.green-button:hover a {
+    color: limegreen; 
+}
